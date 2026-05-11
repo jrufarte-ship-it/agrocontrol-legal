@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacidad y Términos — AgroControl</title>
+<style>
+:root { --verde:#27500A; --verde-m:#3B6D11; --verde-l:#EAF3DE; }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; background:#F8FAF5; color:#1C2B10; line-height:1.7; }
+header { background:linear-gradient(135deg,var(--verde-m),var(--verde)); color:white; padding:40px 24px; text-align:center; }
+header h1 { font-size:28px; font-weight:800; letter-spacing:-0.5px; }
+header p { opacity:0.8; margin-top:8px; font-size:15px; }
+nav { background:white; border-bottom:1px solid #E2EDD6; position:sticky; top:0; z-index:10; display:flex; justify-content:center; gap:0; }
+nav a { padding:14px 24px; color:var(--verde); font-weight:600; font-size:14px; text-decoration:none; border-bottom:3px solid transparent; transition:all 0.2s; }
+nav a:hover, nav a.active { border-bottom-color:var(--verde-m); color:var(--verde-m); }
+.container { max-width:760px; margin:0 auto; padding:40px 24px 80px; }
+.section { display:none; }
+.section.active { display:block; }
+h2 { font-size:22px; font-weight:700; color:var(--verde); margin:32px 0 12px; }
+h2:first-child { margin-top:0; }
+h3 { font-size:16px; font-weight:700; color:#2D5010; margin:20px 0 8px; }
+p { margin-bottom:14px; font-size:15px; color:#3A4A30; }
+ul { margin:8px 0 14px 20px; }
+li { margin-bottom:6px; font-size:15px; color:#3A4A30; }
+.card { background:white; border-radius:14px; padding:24px; margin-bottom:16px; border:1px solid #E2EDD6; box-shadow:0 2px 12px rgba(39,80,10,0.06); }
+.highlight { background:var(--verde-l); border-left:4px solid var(--verde-m); padding:14px 16px; border-radius:0 10px 10px 0; margin:16px 0; font-size:14px; }
+.contact-box { background:white; border:1.5px solid var(--verde-m); border-radius:14px; padding:24px; margin-top:32px; text-align:center; }
+.contact-box a { color:var(--verde-m); font-weight:600; text-decoration:none; }
+.date { font-size:13px; color:#8A9E7A; margin-top:8px; }
+footer { text-align:center; padding:24px; font-size:13px; color:#8A9E7A; border-top:1px solid #E2EDD6; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌿 AgroControl</h1>
+  <p>Asistente agrícola con inteligencia artificial</p>
+</header>
+
+<nav>
+  <a href="#" class="active" onclick="showSection('privacidad',this)">Política de Privacidad</a>
+  <a href="#" onclick="showSection('terminos',this)">Términos de Uso</a>
+</nav>
+
+<div class="container">
+
+  <!-- PRIVACIDAD -->
+  <div class="section active" id="sec-privacidad">
+    <p class="date">Última actualización: mayo de 2025</p>
+
+    <div class="highlight">
+      Tu privacidad es fundamental para nosotros. AgroControl recopila únicamente los datos estrictamente necesarios para ofrecerte el servicio y nunca los vende a terceros.
+    </div>
+
+    <div class="card">
+      <h2>1. Responsable del tratamiento</h2>
+      <p><strong>AgroControl</strong> es una aplicación móvil desarrollada y operada por su equipo de desarrollo. Para cualquier consulta sobre privacidad puedes contactarnos en <strong>agrocontrol@agronomia.app</strong>.</p>
+    </div>
+
+    <div class="card">
+      <h2>2. Datos que recopilamos</h2>
+      <h3>2.1 Datos que nos proporcionas</h3>
+      <ul>
+        <li><strong>Email:</strong> solo si creas una cuenta con Google. No almacenamos contraseñas.</li>
+        <li><strong>Descripciones de problemas agrícolas:</strong> el texto o voz que introduces en cada consulta.</li>
+        <li><strong>Fotos de cultivos:</strong> imágenes que subes para el diagnóstico visual.</li>
+      </ul>
+      <h3>2.2 Datos que generamos automáticamente</h3>
+      <ul>
+        <li><strong>Ubicación aproximada:</strong> para mostrar el clima de tu zona y almacenes cercanos. Solo se usa en el momento de la consulta.</li>
+        <li><strong>Identificador de dispositivo:</strong> un ID anónimo de hardware para gestionar el límite de consultas gratuitas sin necesidad de cuenta.</li>
+        <li><strong>Contador de consultas diarias:</strong> número de consultas realizadas hoy.</li>
+        <li><strong>Recetas guardadas en favoritos:</strong> las recetas que decides guardar.</li>
+      </ul>
+      <h3>2.3 Lo que NO recopilamos</h3>
+      <ul>
+        <li>No almacenamos las fotos que subes — se procesan y se descartan inmediatamente.</li>
+        <li>No rastreamos tu comportamiento dentro de la app más allá del uso básico del servicio.</li>
+        <li>No usamos cookies de seguimiento ni publicidad comportamental.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>3. Para qué usamos tus datos</h2>
+      <ul>
+        <li>Generar diagnósticos fitosanitarios personalizados mediante IA.</li>
+        <li>Mostrar el clima actual y pronóstico de tu zona.</li>
+        <li>Gestionar tu plan (gratuito o PRO) y el límite de consultas diarias.</li>
+        <li>Guardar tus recetas favoritas y sincronizarlas entre dispositivos (si tienes cuenta).</li>
+        <li>Mostrar almacenes y productos patrocinados cercanos a tu ubicación.</li>
+        <li>Mejorar el sistema a partir del feedback anónimo de los usuarios.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>4. Terceros que procesan tus datos</h2>
+      <ul>
+        <li><strong>Anthropic (Claude AI):</strong> procesa el texto y las imágenes para generar diagnósticos. Datos procesados en USA bajo acuerdos de privacidad.</li>
+        <li><strong>Google (Gemini AI):</strong> procesa imágenes para diagnóstico visual. Datos procesados bajo la política de privacidad de Google.</li>
+        <li><strong>Supabase:</strong> base de datos y autenticación. Servidores en la UE (Frankfurt).</li>
+        <li><strong>Open-Meteo:</strong> datos meteorológicos. No requiere identificación personal.</li>
+        <li><strong>Google Firebase:</strong> autenticación con Google. Sujeto a la política de privacidad de Google.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>5. Tus derechos</h2>
+      <p>Conforme al Reglamento General de Protección de Datos (RGPD) tienes derecho a:</p>
+      <ul>
+        <li><strong>Acceso:</strong> solicitar qué datos tenemos sobre ti.</li>
+        <li><strong>Rectificación:</strong> corregir datos incorrectos.</li>
+        <li><strong>Eliminación:</strong> borrar tu cuenta y todos tus datos desde Perfil → "Eliminar cuenta", o contactándonos.</li>
+        <li><strong>Portabilidad:</strong> recibir tus datos en formato legible.</li>
+        <li><strong>Oposición:</strong> oponerte a ciertos usos de tus datos.</li>
+      </ul>
+      <p>Para ejercer cualquier derecho: <strong>agrocontrol@agronomia.app</strong></p>
+    </div>
+
+    <div class="card">
+      <h2>6. Conservación de datos</h2>
+      <ul>
+        <li>Contadores de consultas anónimas: se eliminan automáticamente tras 30 días.</li>
+        <li>Datos de cuenta: se conservan mientras la cuenta esté activa.</li>
+        <li>Al eliminar tu cuenta: todos tus datos se borran de forma permanente e irrecuperable.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>7. Seguridad</h2>
+      <p>Todos los datos se transmiten cifrados mediante HTTPS/TLS. El acceso a la base de datos está protegido por Row Level Security (RLS) — cada usuario solo puede acceder a sus propios datos. Las claves de API de los servicios de IA nunca se exponen al cliente.</p>
+    </div>
+
+    <div class="card">
+      <h2>8. Menores</h2>
+      <p>AgroControl no está dirigida a menores de 16 años. Si eres menor de 16 años, no debes usar la app sin el consentimiento de tus padres o tutores.</p>
+    </div>
+
+    <div class="contact-box">
+      <strong>¿Preguntas sobre privacidad?</strong><br>
+      <a href="mailto:agrocontrol@agronomia.app">agrocontrol@agronomia.app</a>
+    </div>
+  </div>
+
+  <!-- TÉRMINOS -->
+  <div class="section" id="sec-terminos">
+    <p class="date">Última actualización: mayo de 2025</p>
+
+    <div class="highlight">
+      Al usar AgroControl aceptas estos términos. Por favor léelos antes de usar la app.
+    </div>
+
+    <div class="card">
+      <h2>1. Descripción del servicio</h2>
+      <p>AgroControl es una aplicación móvil que usa inteligencia artificial para analizar problemas fitosanitarios en cultivos y generar recomendaciones de tratamiento personalizadas. El servicio incluye una versión gratuita con consultas limitadas y una versión de pago (PRO) con mayor capacidad.</p>
+    </div>
+
+    <div class="card">
+      <h2>2. Limitación de responsabilidad</h2>
+      <div class="highlight">
+        ⚠️ Las recomendaciones de AgroControl son orientativas y no sustituyen el criterio de un ingeniero agrónomo colegiado. Consulta siempre la etiqueta oficial del producto fitosanitario antes de aplicarlo. Los plazos de seguridad indicados son de referencia.
+      </div>
+      <p>AgroControl no se responsabiliza de:</p>
+      <ul>
+        <li>Daños en cultivos derivados de la aplicación de tratamientos recomendados por la app.</li>
+        <li>Errores en el diagnóstico debidos a fotos de baja calidad o descripciones incompletas.</li>
+        <li>Cambios en la disponibilidad o registro de productos fitosanitarios.</li>
+        <li>Pérdidas económicas derivadas del uso de la app.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>3. Plan gratuito y PRO</h2>
+      <h3>Plan gratuito</h3>
+      <ul>
+        <li>2 consultas diarias gratuitas.</li>
+        <li>3 consultas adicionales viendo publicidad.</li>
+        <li>Hasta 3 recetas guardadas en favoritos.</li>
+      </ul>
+      <h3>Plan PRO</h3>
+      <ul>
+        <li>7 consultas diarias.</li>
+        <li>Sin publicidad.</li>
+        <li>Hasta 10 recetas en favoritos.</li>
+        <li>Acceso a funciones exclusivas.</li>
+      </ul>
+      <p>Los contadores se reinician cada día a medianoche (hora de España). Las consultas no utilizadas no se acumulan para el día siguiente.</p>
+    </div>
+
+    <div class="card">
+      <h2>4. Pagos y reembolsos</h2>
+      <p>Los pagos se procesan a través de Google Play Billing. Los precios incluyen IVA cuando corresponda. Las suscripciones PRO se renuevan automáticamente salvo cancelación antes del período de renovación.</p>
+      <p>Los reembolsos se gestionan según la política de Google Play. Para solicitar un reembolso contacta con <strong>agrocontrol@agronomia.app</strong>.</p>
+    </div>
+
+    <div class="card">
+      <h2>5. Uso aceptable</h2>
+      <p>Queda prohibido:</p>
+      <ul>
+        <li>Intentar saltarse los límites de consultas mediante medios técnicos.</li>
+        <li>Usar la app para fines distintos al diagnóstico agrícola legítimo.</li>
+        <li>Compartir cuentas PRO con terceros.</li>
+        <li>Realizar ingeniería inversa o modificar la app.</li>
+        <li>Usar la app de forma automatizada o mediante bots.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>6. Propiedad intelectual</h2>
+      <p>AgroControl, su nombre, logotipo, diseño y código fuente son propiedad de sus desarrolladores. Las recetas generadas por la IA son de uso personal del agricultor que las solicita y no pueden reproducirse comercialmente sin autorización.</p>
+    </div>
+
+    <div class="card">
+      <h2>7. Modificaciones del servicio</h2>
+      <p>Nos reservamos el derecho de modificar, suspender o interrumpir el servicio en cualquier momento. En caso de cambios sustanciales en los términos o precios, te notificaremos con al menos 30 días de antelación.</p>
+    </div>
+
+    <div class="card">
+      <h2>8. Ley aplicable</h2>
+      <p>Estos términos se rigen por la legislación española. Para cualquier disputa, las partes se someten a la jurisdicción de los tribunales de España.</p>
+    </div>
+
+    <div class="contact-box">
+      <strong>¿Dudas sobre los términos?</strong><br>
+      <a href="mailto:agrocontrol@agronomia.app">agrocontrol@agronomia.app</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 AgroControl · Todos los derechos reservados
+</footer>
+
+<script>
+function showSection(id, link) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+  document.getElementById('sec-' + id).classList.add('active');
+  link.classList.add('active');
+  return false;
+}
+</script>
+</body>
+</html>
