@@ -237,9 +237,16 @@ function showSection(id, link) {
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
   document.getElementById('sec-' + id).classList.add('active');
-  link.classList.add('active');
+  if (link) link.classList.add('active');
   return false;
 }
+// Abrir sección según el hash de la URL
+(function() {
+  const hash = window.location.hash.replace('#', '');
+  if (hash === 'terminos') {
+    showSection('terminos', document.querySelectorAll('nav a')[1]);
+  }
+})();
 </script>
 </body>
 </html>
